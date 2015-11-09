@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <title>html5</title>
     <style type="text/css">
-    .theme{
-      display: block;
-      width: 200px;
-      font-size: 30px;
-      margin: 100px auto;
-    }
+        .theme {
+            width: 200px;
+            height: 30px;
+            border: 1px solid blue;
+            transition:3s;
+        }
     </style>
 </head>
-<body>
-<div class="theme">
-  Hello, world.
+<body onload="init()">
+<div id="div" class="theme" style="position: absolute; left:20px">
+
 </div>
- 
+
+<script>
+    function init(){
+        console.log(111)
+        document.getElementById('div').style.position="absolute";
+        document.getElementById('div').style.left="500px";
+    }
+</script>
 </body>
 </html>

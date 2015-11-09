@@ -6,7 +6,7 @@
         i=0;
         function moveText(){
             document.getElementById("txt").style.left = i;
-            document.getElementById("txt").style.top = i;
+//            document.getElementById("txt").style.top = i;
             i++;
             if(i > (parseInt(document.body.clientWidth)) ||i > (parseInt(document.body.clientHeight)))
                 i=1;
@@ -16,6 +16,6 @@
     </script>
 </head>
 <body onLoad="moveText()">
-<div id="txt" style="position:absolute; border: 1px solid blue; " width='400px'>test</div>
+<div id="txt" style="position:absolute; border: 1px solid blue;">test</div>
 </body>
 </html>
